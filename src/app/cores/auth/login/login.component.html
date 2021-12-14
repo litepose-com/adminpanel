@@ -1,0 +1,36 @@
+ <nb-layout>
+  <nb-layout-column class="center-layout">
+    <nb-card class="login-form">
+      <nb-card-body>
+        <h3> Admin Login </h3>
+        <div class="form-group">
+          <label> Enter your email address </label>
+          <input
+            nbInput
+            type="email"
+            [(ngModel)]="email"
+            placeholder="email address"
+
+          />
+        </div>
+
+        <div class="form-group">
+          <label> Enter your password </label>
+          <input
+            nbInput
+            type="password"
+            [(ngModel)]="password"
+            placeholder="password"
+
+          />
+        </div>
+        <button nbButton status="primary" (click)="login()">Login</button>
+        <div>
+          <button nbButton (click)="forgot()"> Forgot password ? </button>
+        </div>
+      </nb-card-body>
+    </nb-card>
+
+  </nb-layout-column>
+
+ </nb-layout>
