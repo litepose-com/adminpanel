@@ -22,6 +22,8 @@ export class EdititemComponent implements OnInit {
       return;
     }
 
+    // console.log(this.update, 'confirm')
+
     this.router.navigate(['/itemtype/itemlist'])
   }
 

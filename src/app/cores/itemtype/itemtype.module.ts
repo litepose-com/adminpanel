@@ -24,7 +24,6 @@ import { EdititemComponent } from './edititem/edititem.component';
     FormsModule,
     NbInputModule,
     NbButtonModule,
-    NbTableModule,
   ]
 })
 export class ItemtypeModule { }

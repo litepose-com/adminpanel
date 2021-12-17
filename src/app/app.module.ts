@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbInputModule, NbCardModule, NbToastrModule, NbActionsModule, NbSidebarModule, NbMenuModule, NbSelectModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbInputModule, NbCardModule, NbToastrModule, NbActionsModule, NbSidebarModule, NbMenuModule, NbSelectModule, NbTableModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { SharesModule } from './shares/shares.module';
 import { HeaderComponent } from './shares/header/header.component';
@@ -17,7 +17,7 @@ import { HeaderComponent } from './shares/header/header.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'default' }),
+    NbThemeModule.forRoot({ name: 'dark' }),
     NbLayoutModule,
     NbEvaIconsModule,
     NbInputModule,
@@ -28,7 +28,7 @@ import { HeaderComponent } from './shares/header/header.component';
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
     NbEvaIconsModule,
-    NbSelectModule
+    NbSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

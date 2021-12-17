@@ -28,6 +28,9 @@ export class SidebarComponent implements OnInit {
     }
   ]
 },
+{
+  title: 'chat',
+}
 
  ]
 
