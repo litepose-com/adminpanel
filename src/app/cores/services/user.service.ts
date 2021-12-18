@@ -18,7 +18,9 @@ export class UserService {
       acc_email: formData.acc_email,
       acc_phone: formData.acc_phone,
       acc_password: formData.acc_password,
-      is_delivery: formData.is_delivery
+      is_delivery: formData.is_delivery,
+      acc_type_id: formData.acc_type_id,
+      delivery_company_id: formData.delivery_company_id
     }
 
     return this.apiService.post(this.url, requestBody).subscribe((response: any) => {
@@ -39,7 +41,9 @@ export class UserService {
       acc_email: formData.acc_email,
       acc_phone: formData.acc_phone,
       acc_password: formData.acc_password,
-      is_delivery: formData.is_delivery
+      is_delivery: formData.is_delivery,
+      acc_type_id: formData.acc_type_id,
+      delivery_company_id: formData.delivery_company_id
     }
 
     return this.apiService.put(`${this.url}/${id}`, requestBody).subscribe((response: any)=>{
