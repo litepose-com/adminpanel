@@ -1,0 +1,23 @@
+<nb-layout>
+  <nb-layout-column class="center-layout">
+    <nb-card class="create-form">
+      <nb-card-body>
+        <div class="form-group">
+          <label> Create Item Type </label>
+          <br>
+          <input
+            nbInput
+            type="text"
+            [(ngModel)]="text"
+            placeholder="Create"
+          />
+        </div>
+        <div>
+          <button nbButton status="primary" (click)="create()">Verify</button>
+        </div>
+
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>
+

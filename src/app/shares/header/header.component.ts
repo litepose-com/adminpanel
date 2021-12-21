@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   items = [
     {
       title: 'Profile',
+      url: '/auth/login'
     },
     {
       title: 'Logout',

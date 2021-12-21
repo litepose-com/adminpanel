@@ -1,0 +1,22 @@
+<nb-layout>
+  <nb-layout-column class="center-layout">
+    <nb-card class="edit-form">
+      <nb-card-body>
+        <div class="form-group">
+          <label> Edit Item Type </label>
+          <br>
+          <input
+            nbInput
+            type="text"
+            [(ngModel)]="update"
+            placeholder="Update Item"
+          />
+        </div>
+        <div>
+          <button nbButton status="primary" (click)="Update()">Update</button>
+        </div>
+
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

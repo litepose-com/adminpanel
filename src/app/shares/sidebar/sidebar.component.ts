@@ -11,96 +11,28 @@ export class SidebarComponent implements OnInit {
 
   items: NbMenuItem[] = [
   {
-    title:'E-commerce',
-    icon: 'shopping-cart-outline',
-  },
-  {
-    title: 'IoT Dashboard',
-    icon: 'home-outline',
-  },
-  {
-    title: 'Backend Intergration',
-    icon: 'settings-outline',
-    children: [
-      {
-        title: 'PHP'
-      },
-      {
-        title: '.NET Core'
-      },
-      {
-        title: 'Node JS'
-      },
-      {
-        title: 'Java'
-      },
-      {
-        title: 'E-commerce'
-      }
-    ]
-  },
-  {
-    title: 'Features',
-    hidden: false
-  },
-  {
-    title: 'Layout',
-    icon: 'layout-outline',
-    children: [
-      {
-        title: 'Stepper',
-      },
-      {
-        title: 'List',
-      },
-      {
-        title: 'Infinite List',
-      },
-      {
-        title: 'Accordion',
-      },
-      {
-        title: 'Tabs',
-      },
-    ]
-  },
-  {
-    title: 'Forms',
-    children: [
-      {
-        title: 'Form Inputs'
-      },
-      {
-        title: 'Form Layouts'
-      },
-      {
-        title: 'Buttons'
-      },
-      {
-        title: 'Datapicker'
-      }
-    ]
-  },
-  {
-    title: 'UI Features',
-    children: [
-      {
-        title: 'Grid'
-      },
-      {
-        title: 'Icons'
-      },
-      {
-        title: 'Typography'
-      },
-      {
-        title: 'Animated Searches'
-      }
-    ]
-  },
-
-
+  title: 'Item types',
+  icon: 'layers-outline',
+  children: [
+    {
+      title: 'create',
+      url: 'itemtype/create'
+    },
+    {
+      title: 'Item list',
+      url: 'itemtype/itemlist'
+    },
+    {
+      title: 'Edit Item',
+      url: 'itemtype/edititem'
+    }
   ]
+},
+{
+  title: 'chat',
+}
+
+ ]
 
   constructor() { }
 
